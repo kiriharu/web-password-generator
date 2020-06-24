@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+          integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Генератор паролей</title>
+</head>
+<body>
+    <div class="content border">
+        <div class="checkboxes">
+            <p>Какие символы включать в пароль:</p>
+            <ul class="checkboxes_ul">
+                <li><input id="nums" type="checkbox" /> Цифры</li>
+                <li><input id="lowercase" type="checkbox" /> Строчные буквы</li>
+                <li><input id="uppercase" type="checkbox" /> Заглавные буквы</li>
+                <li><input id="specsymbols" type="checkbox" /> Спецсимволы</li>
+            </ul>
+        </div>
+
+        <div class="inputs">
+            <p>Длина пароля: </p> <input id="passLength" type="number" step="1" min="3" max="256" value="8" />
+            <p>Количество паролей: </p> <input id="passCount" type="number" step="1" min="3" max="12" value="3" />
+        </div>
+
+        <div class="buttons">
+            <p><button id="gen" class="btn btn-primary">Сгенерировать пароль</button></p>
+        </div>
+    </div>
+        <ul class="result list-group list-group-flush" id="result"></ul>
+</body>
+    <script src="script.js"></script>
+</html>
