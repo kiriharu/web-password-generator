@@ -4,4 +4,4 @@
 
 ### Как это выглядит:
 
-![Main page](https://github.com/kiriharu/web-password-generator/blob/master/preview.png)
+![Main page](./preview.png)
